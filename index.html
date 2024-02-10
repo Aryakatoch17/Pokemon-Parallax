@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Parallax Web</title>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+	<div class="img1">
+		<div class="ptext">
+			<span class="boder">
+				Parallax Website<br>
+      
+        </span>
+        
+    </div>
+    
+	</div>
+  
+  
+   
+      
+  
+	<section class="section section-light">
+		<h2><u>POKEMON</u></h2>
+		<p><b>"The circumstances of one's birth are irrelevant. It is what you do with the gift of life that determines who you are." - Mewtwo</b></p>
+	</section>
+
+	<div class="img2">
+		<div class="ptext">
+			<span class="boder trans">
+				<b>KEEP SCROLLING!</b>
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2><u>Articuno</u></h2>
+		<p><b>The name "Articuno" is a combination of "Arctic," referring to the cold polar regions, and "Uno," which means "one" in Spanish, possibly denoting its status as the first of the legendary birds introduced in the Pokémon series.
+		</b></p></section>
+
+	<div class="img3">
+		<div class="ptext">
+			<span class="boder trans">
+				<b>And we're done</b>
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2><u>Umbreon</u></h2>
+		<p><b>"In the shadows, I stand vigilant."
+      Umbreon is a Dark-type Pokémon and is one of the evolved forms of Eevee, evolving from it when leveled up with high friendship during the nighttime or with a Moon Shard in the main series Pokémon games.
+		</b></p>
+	</section>
+
+		<div class="img1">
+		<div class="ptext">
+			<span class="boder">
+				<i>Thank you!!
+				I'm ARYA.</i>
+			</span>
+		</div>
+	</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
